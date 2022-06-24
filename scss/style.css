@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background: #000;
+}
+
+header .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3px;
+}
+
+header a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+header a:hover {
+  color: #d5a97a;
+}
+
+header li {
+  padding: 0 3px;
+}
+
+.scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.top {
+  margin: 10px 0;
+}
+
+.top h3 {
+  color: #006fa8;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.top .logo {
+  display: inline;
+}
+
+.top .logo img {
+  font-size: 3px;
+}
+
+.top input {
+  border: 1px solid #d7d7d7;
+  position: absolute;
+  top: 15px;
+  left: 30%;
+  width: 60%;
+  padding: 0 7px;
+  letter-spacing: 3px;
+}
+
+.top .search {
+  position: relative;
+}
+
+.top .fa-search {
+  position: absolute;
+  left: 85%;
+  top: 18px;
+  color: #006fa8;
+  font-size: 20px;
+}
+
+.top .fa-search:hover {
+  color: #fff;
+  background: #006fa8;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar {
+  background: #006fa8;
+  transition: 0.9s;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #d5a97a;
+}
+
+.nav-right li {
+  padding: 0 5px;
+}
+
+.nav-right a {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-right a:hover {
+  color: #d5a97a;
+}
+
+.banner .b-half .b-half-first-section:last-child {
+  border-bottom: none;
+}
+
+.banner .b-half .b-half-second-section:last-child {
+  border-bottom: none;
+}
+
+.banner {
+  margin: 10px 0;
+}
+
+.banner .bre-news {
+  background: #dc143c;
+  color: #fff;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.banner .recent {
+  background: #006fa8;
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.banner .b-half {
+  border-left: 1px solid #ccc;
+}
+
+.banner .b-half .b-half-first-section {
+  border-bottom: 1px solid #ccc;
+}
+
+.banner .b-half .b-half-second-section {
+  border-bottom: 1px solid #ccc;
+}
+
+.banner .editor {
+  background: #006fa8;
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.banner .recent-content h5 a {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #000;
+}
+
+.banner .recent-content h5 a:hover {
+  color: #006fa8;
+  text-decoration: underline;
+}
+
+.banner .editor-content h5 a {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #000;
+}
+
+.banner .editor-content h5 a:hover {
+  color: #006fa8;
+  text-decoration: underline;
+}
+
+.carousel-control-prev-icon {
+  border: 1px solid black;
+  background-color: black;
+}
+
+.carousel-control-next-icon {
+  border: 1px solid black;
+  background-color: black;
+}
+
+.nation .n-right .nation-content:nth-child(5) {
+  border-bottom: none;
+}
+
+.nation .n-left {
+  padding: 20px 0;
+  padding-right: 30px;
+}
+
+.nation .n-left h3 {
+  border-top: 3px solid black;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 5px 0;
+}
+
+.nation .n-left h3 a {
+  color: black;
+}
+
+.nation .n-left h3 a:hover {
+  color: #006fa8;
+}
+
+.nation .n-left .img-nation {
+  padding: 7px 0;
+}
+
+.nation .n-left .img-nation img {
+  border-radius: 10px;
+}
+
+.nation .n-left .nation-content h5 a {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #000;
+}
+
+.nation .n-left .nation-content h5 a:hover {
+  color: #006fa8;
+}
+
+.n-right {
+  padding: 20px 0;
+}
+
+.n-right h3 {
+  border-top: 3px solid black;
+  border-bottom: 1px solid black;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.n-right h3 a {
+  color: black;
+}
+
+.n-right h3 a:hover {
+  color: #006fa8;
+}
+
+.n-right .nation-content {
+  border-bottom: 1px solid #ccc;
+}
+
+.n-right .nation-content h5 {
+  padding: 10px 0;
+}
+
+.n-right .nation-content h5 a {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #000;
+  padding: 20px 0;
+}
+
+.n-right .nation-content h5 a:hover {
+  color: #006fa8;
+  text-decoration: underline;
+}
+
+.politics .p-right .politics-content:nth-child(5) {
+  border-bottom: none;
+}
+
+.politics .p-left {
+  padding: 20px 0;
+  padding-right: 30px;
+}
+
+.politics .p-left h3 {
+  border-top: 3px solid black;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 5px 0;
+}
+
+.politics .p-left h3 a {
+  color: black;
+}
+
+.politics .p-left h3 a:hover {
+  color: #006fa8;
+}
+
+.politics .p-left .img-politics {
+  padding: 7px 0;
+}
+
+.politics .p-left .img-politics img {
+  border-radius: 10px;
+}
+
+.politics .p-left .politics-content h5 a {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #000;
+}
+
+.politics .p-left .politics-content h5 a:hover {
+  color: #006fa8;
+}
+
+.politics .p-right {
+  padding: 20px 0;
+}
+
+.politics .p-right h3 {
+  border-top: 3px solid black;
+  border-bottom: 1px solid black;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.politics .p-right h3 a {
+  color: black;
+}
+
+.politics .p-right h3 a:hover {
+  color: #006fa8;
+}
+
+.politics .p-right .politics-content {
+  border-bottom: 1px solid #ccc;
+}
+
+.politics .p-right .politics-content h5 {
+  padding: 10px 0;
+}
+
+.politics .p-right .politics-content h5 a {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #000;
+  padding: 20px 0;
+}
+
+.politics .p-right .politics-content h5 a:hover {
+  color: #006fa8;
+  text-decoration: underline;
+}
+
+footer {
+  background: #006fa8;
+  color: #fff;
+}
+
+footer .f4 .fa {
+  padding-right: 15px;
+}
+
+footer .f4 {
+  padding-top: 45px;
+}
+
+footer .fot-f1 {
+  padding-top: 45px;
+}
+
+footer .f2 {
+  padding-top: 45px;
+}
+
+footer .f3 {
+  padding-top: 45px;
+}
+
+footer h5 {
+  padding-top: 15px;
+  font-weight: 600px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #fff;
+  position: absolute;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li {
+  display: block;
+  padding: 5px 0;
+}
+
+footer li a {
+  padding: 0px 5px;
+}
+
+footer .f1 {
+  position: relative;
+}
+
+footer .f1 li {
+  display: inline;
+}
+
+footer span a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer span a:hover {
+  color: #d5a97a;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #d5a97a;
+}
